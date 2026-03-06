@@ -258,19 +258,19 @@
 <div class="hero">
   <div class="hero-badge">선관위 공식 개표결과 기반 통계 분석</div>
   <h1>제21대 대통령선거<br>통계 이상치 분석</h1>
-  <div class="subtitle">22,691개 투표구 데이터 분석 · 19대~21대 대선 비교 · 해외 부정선거 사례 대비</div>
+  <div class="subtitle">22,691개 투표구 데이터 분석 · 2016~2025 대선·총선 6개 선거 비교</div>
   <div class="hero-stats">
     <div class="hero-stat">
       <div class="num">27.4%p</div>
-      <div class="label">사전-당일 득표율 괴리<br>이전 대선의 3배</div>
+      <div class="label">사전-당일 득표율 괴리<br>이전 최대의 약 2.3배</div>
     </div>
     <div class="hero-stat">
-      <div class="num">0.42배</div>
-      <div class="label">재외투표 지역편차<br>축소 배율</div>
+      <div class="num">0.42</div>
+      <div class="label">재외투표 지역 차이<br>잔존율 (1.0 중)</div>
     </div>
     <div class="hero-stat">
-      <div class="num">3개 대선</div>
-      <div class="label">19대·20대·21대<br>동일 기준 비교</div>
+      <div class="num">6개 선거</div>
+      <div class="label">2016~2025<br>대선 3회 · 총선 3회</div>
     </div>
   </div>
 </div>
@@ -285,7 +285,7 @@
     <li><a href="#f2">발견 2 — 해외투표에서 사라지는 지역 차이</a></li>
     <li><a href="#f3">발견 3 — 호남에서만 역전되는 해외투표 결과</a></li>
     <li><a href="#cross">세 번의 대선 비교: 이 패턴은 언제부터?</a></li>
-    <li><a href="#ukraine">해외 사례 — 우크라이나 2004 대선과의 비교</a></li>
+    <li><a href="#ukraine">참고 — 통계로 부정이 밝혀진 해외 사례</a></li>
     <li><a href="#conclusion">결론과 열린 질문</a></li>
     <li><a href="#data">데이터 출처</a></li>
   </ol>
@@ -303,8 +303,8 @@
   <ul style="padding-left:20px; font-size:14px; color:var(--gray-600);">
     <li><strong>출처</strong> — 중앙선거관리위원회 공식 개표결과</li>
     <li><strong>규모</strong> — 전국 22,691행 (투표구 단위), 14개 컬럼</li>
-    <li><strong>비교 대상</strong> — 19대 대선(2017), 20대 대선(2022), 20~22대 총선 비례대표</li>
-    <li><strong>해외 비교</strong> — 통계적으로 부정이 입증된 우크라이나 2004 대선</li>
+    <li><strong>비교 대상</strong> — 19대 대선(2017), 20대 대선(2022), 20~22대 총선(2016·2020·2024)</li>
+    <li><strong>해외 참고</strong> — 통계 분석으로 부정이 밝혀진 우크라이나 2004 대선 사례</li>
   </ul>
   <h3>"이상치"란?</h3>
   <p>
@@ -328,12 +328,12 @@
     <div class="stat-card card-amber">
       <div class="stat-label">발견 2</div>
       <div class="stat-num">0.42배</div>
-      <div class="stat-desc">국내 62%p 지역편차가<br>재외투표에서 29%p로 축소</div>
+      <div class="stat-desc">국내 62%p 지역 차이가<br>재외투표에서 29%p로 축소</div>
     </div>
     <div class="stat-card card-red">
       <div class="stat-label">발견 3</div>
       <div class="stat-num">역전</div>
-      <div class="stat-desc">비호남은 재외에서 +21%p 상승<br>호남은 오히려 하락</div>
+      <div class="stat-desc">비호남은 재외에서 +21%p 상승<br>전남·전북은 오히려 하락</div>
     </div>
   </div>
 
@@ -365,6 +365,14 @@
         <tr><td>이준석</td><td class="num">7.94%</td><td class="num">7.11%</td><td class="num">-0.84%p</td></tr>
       </tbody>
     </table>
+  </div>
+
+  <div class="callout callout-warn">
+    <strong class="callout-title">어느 정도의 괴리는 예상됩니다</strong>
+    사전투표 유권자는 연령·직업·지역 특성에서 당일투표 유권자와 다를 수 있으며,
+    이런 <strong>자기선택(self-selection)</strong> 효과로 일정 수준의 차이는 자연스럽습니다.
+    실제로 과거 선거에서도 2.9~11.7%p의 괴리가 존재했습니다.
+    아래에서는 21대 대선의 괴리가 이 범위를 크게 벗어나는 점에 초점을 맞춥니다.
   </div>
 
   <div class="callout callout-danger">
@@ -433,28 +441,29 @@
 
   <h3>괴리가 지역마다 균등하지도 않습니다</h3>
   <p>
-    "사전투표를 하는 사람은 전국적으로 진보 성향이 더 많다"는 것만으로는
-    왜 지역마다 괴리 크기가 다른지 설명하기 어렵습니다.
+    자기선택 효과와 높은 지지율 지역의 천장효과를 감안하면,
+    지역마다 괴리 크기가 어느 정도 달라지는 것은 자연스럽습니다.
+    그러나 그 패턴의 형태는 살펴볼 가치가 있습니다.
   </p>
   <div class="table-wrap">
     <table>
-      <thead><tr><th>당일 이재명 득표율 구간</th><th class="num">N</th><th class="num">사전투표 득표율 변화</th></tr></thead>
+      <thead><tr><th>당일 이재명 득표율 구간</th><th class="num">N</th><th class="num">사전-당일 괴리</th></tr></thead>
       <tbody>
-        <tr class="row-warn"><td><strong>0~20% (약세 지역)</strong></td><td class="num">30</td><td class="num"><strong>+118.5% (최대)</strong></td></tr>
-        <tr><td>20~40% (경쟁 지역)</td><td class="num">132</td><td class="num">+82.0%</td></tr>
-        <tr><td>40~50%</td><td class="num">49</td><td class="num">+55.9%</td></tr>
-        <tr><td>70~80% (강세 지역)</td><td class="num">30</td><td class="num">+17.3%</td></tr>
-        <tr><td>80~100% (압도적 강세)</td><td class="num">11</td><td class="num">+11.9%</td></tr>
+        <tr><td>0~20% (약세 지역)</td><td class="num">30</td><td class="num">+18.0%p</td></tr>
+        <tr class="row-warn"><td><strong>20~40% (경쟁 지역)</strong></td><td class="num">132</td><td class="num"><strong>+25.4%p (최대)</strong></td></tr>
+        <tr><td>40~50%</td><td class="num">49</td><td class="num">+24.2%p</td></tr>
+        <tr><td>70~80% (강세 지역)</td><td class="num">30</td><td class="num">+13.3%p</td></tr>
+        <tr><td>80~100% (압도적 강세)</td><td class="num">11</td><td class="num">+9.8%p</td></tr>
       </tbody>
     </table>
   </div>
   <p style="font-size:12px; color:#888; margin-top:4px;">
-    * 사전투표 득표율 변화 = (사전 득표율 − 당일 득표율) / 당일 득표율 × 100.
-    당일 득표율이 낮을수록 분모가 작아 수치가 커지는 경향이 있으므로, 통계 검정은 절대 차이(%p) 기준으로 수행.
+    * 강세 지역에서 괴리가 작아지는 것은 천장효과로 일부 설명 가능.
+    그러나 약세(0~20%)보다 중간(20~40%)에서 괴리가 더 큰 비선형 패턴은 천장효과만으로 설명되지 않습니다.
   </p>
   <p>
-    이재명 후보가 약한 지역일수록 사전투표 득표율 상승폭이 큽니다.
-    절대 차이(%p) 기준 상관: <strong>r = −0.545, p &lt; 0.001</strong>.
+    이재명 후보가 약한 지역일수록 사전투표 상승폭이 큰 경향이 있습니다
+    <strong>(r = −0.545, p &lt; 0.001)</strong>.
   </p>
 
   <div class="chart-img">
@@ -476,7 +485,7 @@
   <h3>지역편차 비교</h3>
   <div class="table-wrap">
     <table>
-      <thead><tr><th>지표</th><th class="num">당일투표</th><th class="num">재외투표</th><th class="num">축소 배율</th></tr></thead>
+      <thead><tr><th>지표</th><th class="num">당일투표</th><th class="num">재외투표</th><th class="num">잔존율</th></tr></thead>
       <tbody>
         <tr class="row-danger"><td>이재명 시도 간 표준편차</td><td class="num">18.45%</td><td class="num">7.83%</td><td class="num"><strong>0.42배</strong></td></tr>
         <tr><td>김문수 시도 간 표준편차</td><td class="num">18.35%</td><td class="num">6.21%</td><td class="num">0.34배</td></tr>
@@ -492,24 +501,29 @@
     모든 시도에서 약 67% 부근으로 수렴합니다.
   </div>
 
-  <h3>이 수렴은 매 선거마다 강해지고 있습니다</h3>
+  <h3>세 번의 대선에서 지역 차이 잔존율이 점차 낮아졌습니다</h3>
   <div class="stat-grid">
     <div class="stat-card card-green">
       <div class="stat-label">19대 대선 (2017)</div>
       <div class="stat-num">0.551</div>
-      <div class="stat-desc">상대적으로 완만한 축소</div>
+      <div class="stat-desc">지역 차이의 55%가 남음</div>
     </div>
     <div class="stat-card card-amber">
       <div class="stat-label">20대 대선 (2022)</div>
       <div class="stat-num">0.493</div>
-      <div class="stat-desc">축소 강화</div>
+      <div class="stat-desc">지역 차이의 49%가 남음</div>
     </div>
     <div class="stat-card card-red">
       <div class="stat-label">21대 대선 (2025)</div>
       <div class="stat-num">0.424</div>
-      <div class="stat-desc">가장 강한 축소</div>
+      <div class="stat-desc">지역 차이의 42%만 남음</div>
     </div>
   </div>
+
+  <p style="font-size:13px; color:var(--gray-500); margin-top:8px;">
+    * 잔존율 = 재외투표 시도 간 표준편차 / 당일투표 시도 간 표준편차. 1.0이면 차이가 그대로, 0이면 완전 소멸.
+    3개 대선의 관찰이므로 확정적 추세보다는 "같은 방향의 변화가 반복됨"으로 이해하는 것이 적절합니다.
+  </p>
 
   <div class="chart-img">
     <img src="6_재외투표_비대칭분석.png" alt="재외투표 비대칭 분석">
@@ -525,7 +539,8 @@
     <strong class="callout-title">무엇을 봤나?</strong>
     해외에서 투표한 유권자는 국내보다 이재명 후보를 더 많이 지지합니다.
     비호남 13개 시도에서 <strong>예외 없이</strong> 재외투표 득표율이 국내보다 높습니다.
-    그런데 <strong>호남(광주·전남·전북)에서만 정반대</strong>로, 재외투표 득표율이 오히려 국내보다 낮아집니다.
+    그런데 <strong>전남·전북에서는 정반대</strong>로 재외투표 득표율이 국내보다 오히려 낮아지며,
+    광주는 거의 변동 없이(+0.20%p) 상승세가 사실상 소멸합니다.
   </div>
 
   <h3>21대 대선 (2025) — 시도별 재외투표 비교</h3>
@@ -665,7 +680,7 @@
           <td><span class="badge badge-red">2배 이상 급증</span></td>
         </tr>
         <tr class="row-warn">
-          <td>재외 편차 축소 배율</td><td class="num">0.551</td><td class="num">0.493</td>
+          <td>재외투표 지역 차이 잔존율</td><td class="num">0.551</td><td class="num">0.493</td>
           <td class="num"><strong>0.424</strong></td>
           <td><span class="badge badge-amber">점진 축소</span></td>
         </tr>
@@ -688,7 +703,7 @@
     </div>
     <div class="tl-item">
       <div class="tl-year">2017 — 19대 대선 (문재인)</div>
-      <div class="tl-desc">괴리 <strong>+7.6%p</strong>. 호남 재외 역전 <strong>없음</strong>. 이것이 정상적 기준선(baseline).</div>
+      <div class="tl-desc">괴리 <strong>+7.6%p</strong>. 호남 재외 역전 <strong>없음</strong>. 세 대선 중 괴리가 가장 작았던 시점.</div>
     </div>
     <div class="tl-item">
       <div class="tl-year">2020 — 21대 총선</div>
@@ -704,138 +719,38 @@
     </div>
     <div class="tl-item tl-alert">
       <div class="tl-year" style="color:var(--red-600);">2025 — 21대 대선 (이재명)</div>
-      <div class="tl-desc"><span class="badge badge-red">괴리 2배 이상 급증</span> <strong>+27.4%p</strong>. 호남 재외 역전 <span class="badge badge-red">지속</span>. 축소비 <strong>0.424</strong>.</div>
+      <div class="tl-desc"><span class="badge badge-red">괴리 2배 이상 급증</span> <strong>+27.4%p</strong>. 호남 재외 역전 <span class="badge badge-red">지속</span>. 지역 차이 잔존율 <strong>0.424</strong>.</div>
     </div>
   </div>
+  <p style="font-size:13px; color:var(--gray-500); margin-top:8px;">
+    * 총선(지역구)과 대선(후보 간 대결)은 투표 동기와 후보 구도가 다르므로 직접 비교에 한계가 있습니다.
+    대선 간 비교(19대 → 20대 → 21대)가 보다 적절한 기준입니다.
+  </p>
 
   <div class="callout callout-danger">
     <strong class="callout-title">패턴의 시작 시점</strong>
     이 패턴들은 19대(2017)에서 21대(2025)로 올수록 점점 강해지고 있습니다.
     호남 재외 역전은 <strong>20대(2022)부터</strong>, 사전-당일 괴리 급증은 <strong>21대(2025)에서</strong> 나타났으며,
-    19대에서도 괴리(7.6%p)와 재외 축소(0.551배)가 이미 존재했습니다.
+    19대에서도 괴리(7.6%p)와 재외투표의 지역 차이 축소(잔존율 0.551)가 이미 존재했습니다.
     <strong>이것이 언제부터 시작되었는지</strong>는 추가 분석이 필요한 질문입니다.
   </div>
 </section>
 
-<!-- ===== 7. 우크라이나 비교 ===== -->
+<!-- ===== 7. 해외 참고 ===== -->
 <section id="ukraine">
-  <h2>7. 해외 사례 — 우크라이나 2004 대선과의 비교</h2>
+  <h2>7. 참고 — 통계 분석으로 부정이 밝혀진 해외 사례</h2>
 
   <div class="callout callout-info">
-    <strong class="callout-title">왜 우크라이나를 비교하나?</strong>
-    2004년 우크라이나 대선은 <strong>통계적 방법으로 부정이 입증</strong>된 대표적 사례입니다.
-    이 선거에서 나타난 통계 패턴이 한국 21대 대선의 패턴과 구조적으로 유사합니다.
-    이 비교는 한국 데이터가 국제적 맥락에서 어떤 위치에 있는지 보여줍니다.
+    <strong class="callout-title">우크라이나 2004 대선</strong>
+    2004년 우크라이나 대선 결선투표에서 특정 지역의 투표율과 득표율이 동시에 비정상적으로 급등하는
+    통계적 이상치가 발견되었습니다. 이를 계기로 국제 감시단 조사가 이루어져
+    대규모 표 조작이 확인되었고, 대법원이 결선을 무효 처리했습니다.
+    이 사례는 <strong>통계적 이상치 분석이 선거 검증의 출발점이 될 수 있음</strong>을 보여줍니다.
   </div>
 
-  <h3>우크라이나 2004년에 무슨 일이 있었나?</h3>
-  <p>
-    친서방 후보 <strong>유셴코</strong>와 친러 후보 <strong>야누코비치</strong>가 맞붙었습니다.
-    1차 투표에서 접전이었으나, 결선에서 야누코비치가 승리를 선언합니다.
-    그러나 통계 분석과 국제 감시단의 조사로 <strong>동부 지역에서의 대규모 표 조작</strong>이 밝혀져,
-    우크라이나 대법원이 결선을 무효로 판결하고, 재투표에서 유셴코가 당선됩니다.
+  <p style="font-size:13px; color:var(--gray-500);">
+    참고: Myagkov, Ordeshook &amp; Shakin (2009). <em>The Forensics of Election Fraud: Russia and Ukraine</em>. Cambridge UP.
   </p>
-
-  <h3>우크라이나 핵심 수치</h3>
-  <div class="table-wrap">
-    <table>
-      <thead><tr><th></th><th class="num">1차 투표</th><th class="num">결선 (부정)</th><th class="num">재투표</th></tr></thead>
-      <tbody>
-        <tr><td>야누코비치 전국</td><td class="num">39.3%</td><td class="num"><strong>49.5%</strong></td><td class="num">44.2%</td></tr>
-        <tr><td>유셴코 전국</td><td class="num">39.9%</td><td class="num">46.6%</td><td class="num"><strong>52.0%</strong></td></tr>
-        <tr class="row-danger"><td><strong>도네츠크(동부)</strong> — 야누코비치</td><td class="num">86.7%</td><td class="num"><strong>96.2%</strong></td><td class="num">93.5%</td></tr>
-        <tr class="row-danger"><td><strong>도네츠크 투표율</strong></td><td class="num">78.1%</td><td class="num"><strong>96.7%</strong></td><td class="num">78.0%</td></tr>
-        <tr><td>리비우(서부) — 유셴코</td><td class="num">86.8%</td><td class="num">93.7%</td><td class="num">93.7%</td></tr>
-      </tbody>
-    </table>
-  </div>
-
-  <div class="callout callout-danger">
-    <strong class="callout-title">부정의 통계적 증거</strong>
-    도네츠크에서 야누코비치 득표율이 86.7%에서 96.2%로 급등하면서,
-    동시에 투표율도 78%에서 97%로 급등했습니다.
-    <strong>새로 나온 표가 거의 전부 한 후보에게</strong> 간 것입니다.
-    재투표에서 이 수치가 원래대로 돌아온 것이 조작의 결정적 증거가 되었습니다.
-  </div>
-
-  <h3>한국 21대 대선과 무엇이 비슷한가?</h3>
-
-  <div class="table-wrap">
-    <table>
-      <thead><tr><th>패턴</th><th>우크라이나 2004</th><th>한국 21대 대선</th></tr></thead>
-      <tbody>
-        <tr>
-          <td><strong>비교 대상</strong></td>
-          <td>1차 투표 → 결선투표<br>(다른 라운드)</td>
-          <td>당일투표 → 사전/재외투표<br>(다른 투표 방식)</td>
-        </tr>
-        <tr class="row-danger">
-          <td><strong>특정 채널에서<br>급격한 변화</strong></td>
-          <td>결선에서 야누코비치<br>+10.2%p (39.3→49.5%)</td>
-          <td>관내사전투표에서 이재명<br>+27.6%p (37.96→65.54%)</td>
-        </tr>
-        <tr class="row-danger">
-          <td><strong>지역별 비대칭</strong></td>
-          <td>동부만 +9.5%p (86.7→96.2%)<br>서부는 안정적</td>
-          <td>비호남 재외 +21%p<br><strong>호남 재외는 오히려 하락</strong></td>
-        </tr>
-        <tr class="row-warn">
-          <td><strong>이전 기준선과<br>달라진 시점</strong></td>
-          <td>이전 선거에서는<br>이 패턴 없었음</td>
-          <td>19대(문재인)에서는<br>이 패턴 없었음</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-
-  <div class="compare-box box-red">
-    <div class="icon">⚠️</div>
-    <div class="content">
-      <div class="title">구조적 유사성: 특정 채널에서만 나타나는 지역별 비대칭적 표 이동</div>
-      <div class="desc">
-        우크라이나에서는 "결선투표"라는 <strong>시간적 채널</strong>에서 동부 지역에만 비정상적 표 이동이 나타났습니다.
-        한국에서는 "사전·재외투표"라는 <strong>투표방식 채널</strong>에서 호남과 비호남의 결과가 비대칭적으로 나뉩니다.
-        두 사례 모두 <strong>특정 투표 채널에서, 특정 지역에서만</strong> 이상 패턴이 집중됩니다.
-      </div>
-    </div>
-  </div>
-
-  <h3>차이점</h3>
-  <div class="table-wrap">
-    <table>
-      <thead><tr><th></th><th>우크라이나</th><th>한국</th></tr></thead>
-      <tbody>
-        <tr>
-          <td>조작 확인 여부</td>
-          <td>대법원 판결 + 재투표로 <strong>확인됨</strong></td>
-          <td><strong>미확인</strong>. 통계 패턴만 존재</td>
-        </tr>
-        <tr>
-          <td>이상 방향</td>
-          <td>특정 지역에서 <strong>급등</strong> (86→96%)</td>
-          <td>특정 지역에서 <strong>하락</strong> (84→80%)</td>
-        </tr>
-        <tr>
-          <td>투표 방식</td>
-          <td>동일 투표소, 다른 라운드</td>
-          <td>사전투표소/재외공관 등 별도 채널</td>
-        </tr>
-        <tr>
-          <td>숫자 조작 흔적</td>
-          <td>있음 (투표율 97%, 끝자리 이상)</td>
-          <td>없음 (벤포드 법칙 통과, 끝자리 정상)</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-
-  <div class="callout callout-info">
-    <strong class="callout-title">비교의 의미</strong>
-    이 비교는 한국에서 우크라이나와 같은 조작이 있었다고 주장하는 것이 <strong>아닙니다</strong>.
-    국제적으로 부정이 입증된 선거에서 나타났던 통계 패턴의 <strong>구조</strong>가
-    한국 데이터에서도 관찰된다는 사실을 보여주는 것입니다.
-    최종 판단에는 물리적 증거, 제도 분석, 유권자 조사 등이 함께 필요합니다.
-  </div>
 </section>
 
 <!-- ===== 8. 결론 ===== -->
@@ -846,8 +761,8 @@
   <div class="callout callout-danger">
     <strong class="callout-title">채널별·지역별 구조적 패턴이 존재합니다</strong>
     ① 사전투표에서만 이재명 득표율 27.4%p 상승 (이전 최대의 2배 이상)<br>
-    ② 재외투표에서 지역편차가 절반 이하로 축소 (0.42배)<br>
-    ③ 호남에서만 재외투표 득표율 하락 (비호남은 전원 상승)<br>
+    ② 재외투표에서 지역 차이가 절반 이하로 축소 (잔존율 0.42)<br>
+    ③ 전남·전북에서 재외투표 득표율 하락, 광주는 정체 (비호남은 전원 상승)<br>
     이 패턴들은 19대(2017)부터 존재하며, <strong>21대(2025)에서 가장 극단적</strong>입니다.
   </div>
 
